@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { List } from './Components/List';
 import { EventList } from './Components/EventList';
+import { PageList } from './Pagination/PageList';
 
 
 export type Names = {
@@ -59,6 +60,7 @@ function App(): JSX.Element {
   return (
     <div className="App">
       {renderedList()}
+      <PageList />
     </div>
   );
 }
